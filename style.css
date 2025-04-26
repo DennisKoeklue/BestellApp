@@ -1,0 +1,62 @@
+header{
+background-color: rgb(255, 102, 0);
+width: 100%;
+height: 60px;
+display: flex;
+justify-content: center;
+}
+
+.header_Content{
+    max-width: 1980px;
+    width: 100%;
+    padding: 0px 10px 0px 10px;
+}
+main{
+    min-height: 100vh;
+    background-color: rgb(253, 253, 253);
+    display: flex;
+
+}
+
+
+.store_items{
+    width: calc(100% - 250px);
+    padding: 0px;
+    border: 2px solid darkblue;
+    display: flex;
+    flex-direction: column;
+}
+
+.restaurant_content_header{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.restaurant_textbox{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 10px 0px;
+    gap: 15px;
+}
+
+.testItem{
+    padding: 20px;
+    font-size: 48px;
+    height: 1500px;
+    width: 100%;
+    background-color: blue;
+}
+
+.basket_wrapper{
+    width: 250px;
+    flex-grow: 1;
+    border: 2px solid red;
+    padding: 16px;
+}
+
+footer{
+    width: 100%;
+    height: 70px;
+    background-color: brown;
+}
