@@ -54,6 +54,20 @@ main{
 
 }
 
+.food_order_area{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 15px;
+}
+
+.all_maindish_render_div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+}
+
 .testItem{
     padding: 20px;
     font-size: 48px;
