@@ -24,3 +24,16 @@
     color: orange;
     font-size: 20px;
 }
+
+.span_food_order_warper{
+    color: grey;
+    text-decoration: none;
+}
+
+.span_food_order_warper:hover{
+    color: orange;
+    cursor: pointer;
+    transform: scale(1.05);
+    
+
+}

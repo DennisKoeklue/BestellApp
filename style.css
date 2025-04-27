@@ -1,3 +1,8 @@
+
+.d_none{
+    display: none;
+}
+
 header{
 background-color: rgb(255, 102, 0);
 width: 100%;
@@ -38,6 +43,15 @@ main{
     flex-direction: column;
     padding: 15px 10px 0px;
     gap: 15px;
+}
+
+.food_order_warper{
+    background-color: #f1f1e2b0;
+    padding: 15px;
+    margin-top: 15px;
+    gap: 15px;
+    display: flex;
+
 }
 
 .testItem{
