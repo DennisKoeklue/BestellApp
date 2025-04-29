@@ -55,3 +55,18 @@
     color: orangered;
     font-weight: 600;
 }
+
+.maindish_add_img{
+    width: 10px;
+    height: 10px;
+    border: 2px solid rgba(128, 128, 128, 0.411);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 14px;
+}
+
+.add_symbole{
+    color: orangered;
+    font-size: 40px;
+}
