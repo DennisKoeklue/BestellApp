@@ -50,3 +50,8 @@
     font-size: larger;
     margin-left: 15px;
 }
+
+.price_span{
+    color: orangered;
+    font-weight: 600;
+}

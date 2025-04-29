@@ -67,6 +67,14 @@ main{
     width: 100%;
     margin-top: 10px;
 }
+.maindish_divs{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgba(128, 128, 128, 0.26);
+    padding:10px;
+    gap: 10px;
+}
 
 .testItem{
     padding: 20px;
