@@ -83,3 +83,11 @@
     color: orangered;
     font-size: 40px;
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+
+::-webkit-scrollbar-thumb {
+    background: orangered; 
+  }
