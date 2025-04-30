@@ -108,6 +108,12 @@ main{
     width: 100%;
     margin-top: 10px;
 }
+.all_alk_render_div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+}
 
 .testItem{
     padding: 20px;
