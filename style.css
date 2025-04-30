@@ -78,6 +78,10 @@ main{
     padding:10px;
 }
 
+.maindish_divs:hover{
+    background-color: rgba(151, 151, 151, 0.192);
+}
+
 .maindish_info{
     width: 100%;
     display: flex;
@@ -92,6 +96,13 @@ main{
 }
 
 .all_desserts_render_div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.all_nonalk_render_div{
     display: flex;
     flex-direction: column;
     width: 100%;
