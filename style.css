@@ -127,8 +127,29 @@ main{
     width: 250px;
     flex-grow: 1;
     border: 2px solid red;
-    padding: 16px;
+    /* padding: 16px; */
 }
+
+.basket{
+width: 100%;
+height: 370px;
+background-color: aqua;
+}
+
+.all_dishes_render_div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+}
+
+.transaktion{
+    width: 100%;
+    display: flex;
+}
+
+
+
 
 footer{
     width: 100%;

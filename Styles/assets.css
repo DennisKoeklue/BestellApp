@@ -91,3 +91,35 @@
 ::-webkit-scrollbar-thumb {
     background: orange; 
   }
+
+  .basket_h2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  .seperator{
+    height: 2px;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.366);
+  }
+
+  .minus{
+    width: 10px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .minus_span{
+    font-size: 40px;
+    color: orange;
+  }
+
+  .minus_span:hover{
+    color: rgb(187, 123, 4);
+    cursor: pointer;
+  }
