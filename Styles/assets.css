@@ -123,3 +123,23 @@
     color: rgb(187, 123, 4);
     cursor: pointer;
   }
+
+  .number_of_dishes{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .gesammt_summe{
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+
+.trash_can{
+    width: 25px;
+    height: 25px;
+}
+
+.trash_can:hover{
+background-color: rgba(128, 128, 128, 0.393);
+}
+

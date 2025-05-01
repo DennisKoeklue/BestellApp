@@ -146,6 +146,9 @@ background-color: aqua;
 .transaktion{
     width: 100%;
     display: flex;
+    margin-top: 5px;
+    align-items: center;
+    gap: 5px;
 }
 
 
