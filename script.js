@@ -1,6 +1,8 @@
 function init() {
     renderMainDishes()
     renderDesserts()
+    renderNonAlk()
+    renderAlkohol()
 }
 
 
@@ -26,11 +28,23 @@ function renderDesserts() {
 }
 
 function renderNonAlk() {
-    
+    const mainNonAlk = document.getElementById(`NonAlk`);
+    mainNonAlk.innerHTML = "";
+
+    for (let n = 0; n < myDrinksNonAlk.length; n++) {
+        mainNonAlk.innerHTML += templateNonAlk(n)
+        
+    }
 }
 
 
 function renderAlkohol() {
-    
+    const mainAlkohol = document.getElementById(`Alk`);
+    mainAlkohol.innerHTML = "";
+
+    for (let alko = 0; alko < myDrinksAlk.length; alko++) {
+        mainAlkohol.innerHTML += templateAlkohl(alko)
+        
+    }
 }
 

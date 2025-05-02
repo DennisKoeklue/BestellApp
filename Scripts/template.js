@@ -33,7 +33,7 @@ function templateDessert(d) {
     `
 }
 
-function templateNonAlk() {
+function templateNonAlk(n) {
     return`
     <div class="maindish_divs">
                         <div class="maindish_info">
@@ -50,7 +50,7 @@ function templateNonAlk() {
     `
 }
 
-function templateAlkohl() {
+function templateAlkohl(alko) {
     return`
     <div class="maindish_divs">
                         <div class="maindish_info">
