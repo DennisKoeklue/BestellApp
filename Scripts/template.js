@@ -16,7 +16,7 @@ function templateMainDishes(i) {
 }
 
 
-function templateDessert() {
+function templateDessert(d) {
     return`
     <div class="maindish_divs">
                         <div class="maindish_info">

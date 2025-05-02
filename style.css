@@ -70,6 +70,7 @@ main{
     flex-direction: column;
     width: 100%;
     margin-top: 10px;
+    gap: 12px;
 }
 .maindish_divs{
     width: 100%;
@@ -100,6 +101,7 @@ main{
     flex-direction: column;
     width: 100%;
     margin-top: 10px;
+    gap: 12px;
 }
 
 .all_nonalk_render_div{
@@ -107,12 +109,14 @@ main{
     flex-direction: column;
     width: 100%;
     margin-top: 10px;
+    gap: 12px;
 }
 .all_alk_render_div{
     display: flex;
     flex-direction: column;
     width: 100%;
     margin-top: 10px;
+    gap: 12px;
 }
 
 .testItem{
