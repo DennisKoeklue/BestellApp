@@ -1,4 +1,4 @@
-function templateMainDishes() {
+function templateMainDishes(i) {
     return`
     <div class="maindish_divs">
                         <div class="maindish_info">
