@@ -80,7 +80,7 @@ main{
 }
 
 .maindish_divs:hover{
-    background-color: rgba(151, 151, 151, 0.192);
+    box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.527);
 }
 
 .maindish_info{

@@ -87,3 +87,19 @@ function addzusammen(test, i) {
 }
 
 
+function standaAloneAmountUpdate() {
+    
+}
+
+
+function addedAmount(i) {
+    basketkorb[i].amount ++
+    renderBasketItem()
+
+}
+
+function removeAmount(i) {
+    
+}
+
+

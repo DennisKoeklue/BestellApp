@@ -83,7 +83,7 @@ function templateBasketdishes(basket_Item) {
                             <div class="number_of_dishes">
                                 <span>${basketkorb[basket_Item].amount}</span>
                             </div>
-                            <div class="minus">
+                            <div onclick = "addedAmount(${basket_Item})" class="minus">
                                 <span class="minus_span">+</span>
                             </div>
                             <div class="gesammt_summe">
