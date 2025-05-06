@@ -100,7 +100,8 @@ function addedAmount(i) {
 
 function minusAmount(i) {
     if (basketkorb[basket_Item].amount === 0) {
-        
+        basketkorb.splice(basket_Item, 1)
+        renderBasketItem()
     }
     else{
         basketkorb[i].amount --
