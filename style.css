@@ -30,7 +30,6 @@ main{
 .store_items{
     width: calc(100% - 250px);
     padding: 0px;
-    border: 2px solid darkblue;
     display: flex;
     flex-direction: column;
 }
@@ -130,7 +129,6 @@ main{
 .basket_wrapper{
     width: 250px;
     flex-grow: 1;
-    border: 2px solid red;
     /* padding: 16px; */
 }
 
