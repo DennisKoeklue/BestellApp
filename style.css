@@ -32,6 +32,7 @@ main{
     padding: 0px;
     display: flex;
     flex-direction: column;
+    
 }
 
 .restaurant_content_header{
@@ -130,6 +131,7 @@ main{
     width: 250px;
     flex-grow: 1;
     /* padding: 16px; */
+    box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.527);
 }
 
 .basket{
