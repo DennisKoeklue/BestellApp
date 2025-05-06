@@ -87,7 +87,7 @@ function templateBasketdishes(basket_Item) {
                                 <span class="minus_span">+</span>
                             </div>
                             <div class="gesammt_summe">
-                                <span>${afterdishesfixprice}</span>
+                                <span>${afterdishesfixprice}€</span>
                             </div>
                             <img class="trash_can" src="./img/icon/basket-2965747_640.png" alt="müll">
                         
