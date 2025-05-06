@@ -98,7 +98,7 @@ function addedAmount(i) {
 
 }
 
-function removeAmount(i) {
+function minusAmount(i) {
     if (basketkorb[basket_Item].amount === 0) {
         
     }
