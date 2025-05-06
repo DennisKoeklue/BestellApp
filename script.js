@@ -102,6 +102,10 @@ function removeAmount(i) {
     if (basketkorb[basket_Item].amount === 0) {
         
     }
+    else{
+        basketkorb[i].amount --
+        renderBasketItem()
+    }
 }
 
 
