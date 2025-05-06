@@ -108,4 +108,8 @@ function minusAmount(i) {
     }
 }
 
+function removeObjektItem(i) {
+    basketkorb[i].splice()
+}
+
 
