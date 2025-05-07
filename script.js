@@ -70,6 +70,27 @@ function add(i) {
     renderBasketItem()
 }
 
+function addDessert(i) {
+    let test = myDessert[i]
+
+    addzusammen(test , i)
+    renderBasketItem()
+}
+
+function addNonAlk(i) {
+    let test = myDrinksNonAlk[i]
+
+    addzusammen(test , i)
+    renderBasketItem()
+}
+
+function addAlk(i) {
+    let test = myDrinksAlk[i]
+
+    addzusammen(test , i)
+    renderBasketItem()
+}
+
 function addzusammen(test, i) {
     const findeArtikel = basketkorb.find(artikel => artikel.name === test.name)
     if (findeArtikel === undefined) {

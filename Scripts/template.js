@@ -25,7 +25,7 @@ function templateDessert(d) {
                         <span class="price_span">${myDessert[d].price}€</span>
                         </div>
                         <div class="maindish_add_div">
-                            <div class="maindish_add_img">
+                            <div onclick ="addDessert(${d})" class="maindish_add_img">
                                 <span class="add_symbole">+</span>
                             </div>
                         </div>
@@ -42,7 +42,7 @@ function templateNonAlk(n) {
                         <span class="price_span">${myDrinksNonAlk[n].price}€</span>
                         </div>
                         <div class="maindish_add_div">
-                            <div class="maindish_add_img">
+                            <div onclick ="addNonAlk(${n})" class="maindish_add_img">
                                 <span class="add_symbole">+</span>
                             </div>
                         </div>
@@ -59,7 +59,7 @@ function templateAlkohl(alko) {
                         <span class="price_span">${myDrinksAlk[alko].price}€</span>
                         </div>
                         <div class="maindish_add_div">
-                            <div class="maindish_add_img">
+                            <div onclick="addAlk(${alko})" class="maindish_add_img">
                                 <span class="add_symbole">+</span>
                             </div>
                         </div>
