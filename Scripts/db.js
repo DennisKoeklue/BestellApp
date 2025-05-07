@@ -60,12 +60,12 @@ let myDessert = [
     {
         "name": "Tiramisu",
         "price": 5.99,
-        "description": "Die köstliche Mischung aus Löffelbiskuit mit starkem Espresso, frischer Mascarponecreme und einem Hauch aromatischem Kakao ist einfach zu gut. Ein Dolce, das auch als kleiner Kuchen durchgehen könnte. Das Geheimnis liegt in der Kombination der Zutaten, lässt sich aber ganz einfach zubereiten."
+        "description": "Die köstliche Mischung aus Löffelbiskuit mit starkem Espresso, frischer Mascarponecreme und einem Hauch aromatischem Kakao ist einfach zu gut."
     },
     {
         "name": "Panna Cotta",
         "price": 5.99,
-        "description": "Traditionell wird die Sahne mit Zucker und Gewürzen so lange erhitzt, bis sie stark reduziert ist. Weil diese Zubereitung Zeit und ein bisschen Übung braucht, wird das traditionelle Rezept heute oft mit Gelatine zubereitet."
+        "description": "Traditionell Sahne mit Zucker und Gewürzen so lange erhitzt, bis sie stark reduziert ist."
     },
     {
         "name": "Amarenakirschen aus dem Glas",
