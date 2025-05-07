@@ -89,7 +89,7 @@ function templateBasketdishes(basket_Item) {
                             <div class="gesammt_summe">
                                 <span>${afterdishesfixprice}€</span>
                             </div>
-                            <img class="trash_can" src="./img/icon/basket-2965747_640.png" alt="müll">
+                            <img onclick ="removeObjektItem(${basket_Item})" class="trash_can" src="./img/icon/basket-2965747_640.png" alt="müll">
                         
                             
                         </div>

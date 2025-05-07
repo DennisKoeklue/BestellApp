@@ -103,7 +103,7 @@ function minusAmount(basket_Item) {
     if (basketkorb[basket_Item].amount === 1) {
         removeObjektItem(basket_Item)
         renderBasketItem()
-        basktetUpdateforMinus()
+        
 
     }
     else{
@@ -114,6 +114,8 @@ function minusAmount(basket_Item) {
 
 function removeObjektItem(basket_Item) {
     basketkorb.splice(basket_Item, 1)
+    basktetUpdateforMinus()
+    renderBasketItem()
 }
 
 
