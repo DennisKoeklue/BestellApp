@@ -77,7 +77,7 @@ function templateBasketdishes(basket_Item) {
                             <h4>${basketkorb[basket_Item].name}</h4>
                         </div>
                         <div class="transaktion">
-                            <div class="minus">
+                            <div onclick = "minusAmount(${basket_Item})" class="minus">
                                 <span class="minus_span">-</span>
                             </div>
                             <div class="number_of_dishes">
@@ -105,5 +105,13 @@ function basketBill(totalSum) {
     <span>${subsum}€</span>
     <span>5.00€</span>
     <h4>${afterToFix}€</h4>
+    `
+}
+
+function basketBill0() {
+    return`
+    <span>0.00€</span>
+    <span>5.00€</span>
+    <h4>0.00€</h4>
     `
 }

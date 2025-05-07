@@ -87,8 +87,9 @@ function addzusammen(test, i) {
 }
 
 
-function standaAloneAmountUpdate() {
-    
+function basktetUpdateforMinus(){
+    let basketallPrice = document.getElementById('allPrices')
+    basketallPrice.innerHTML = basketBill0()
 }
 
 
@@ -99,12 +100,14 @@ function addedAmount(i) {
 }
 
 function minusAmount(basket_Item) {
-    if (basketkorb[basket_Item].amount === 0) {
+    if (basketkorb[basket_Item].amount === 1) {
         removeObjektItem(basket_Item)
         renderBasketItem()
+        basktetUpdateforMinus()
+
     }
     else{
-        basketkorb[i].amount --
+        basketkorb[basket_Item].amount --
         renderBasketItem()
     }
 }
