@@ -98,9 +98,9 @@ function addedAmount(i) {
 
 }
 
-function minusAmount(i) {
+function minusAmount(basket_Item) {
     if (basketkorb[basket_Item].amount === 0) {
-        basketkorb.splice(basket_Item, 1)
+        removeObjektItem(basket_Item)
         renderBasketItem()
     }
     else{
@@ -109,8 +109,8 @@ function minusAmount(i) {
     }
 }
 
-function removeObjektItem(i) {
-    basketkorb[i].splice()
+function removeObjektItem(basket_Item) {
+    basketkorb.splice(basket_Item, 1)
 }
 
 
