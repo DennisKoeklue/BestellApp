@@ -143,3 +143,24 @@
 background-color: rgba(128, 128, 128, 0.393);
 }
 
+.for_button{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+button{
+  background-color: orange;
+  border:solid rgb(204, 134, 3);
+  border-radius: 10px;
+  padding: 10px 80px 10px 80px;
+  font-size: 20px;
+}
+button:hover{
+  background-color: rgb(204, 134, 3);
+  border:solid orange;
+  cursor: pointer;
+
+}
+
