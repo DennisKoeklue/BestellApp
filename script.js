@@ -140,3 +140,15 @@ function removeObjektItem(basket_Item) {
 }
 
 
+function orderButton() {
+    if (basketkorb.length === 0) {
+        
+    }
+    else{
+        delete basketkorb
+        
+        
+    }
+}
+
+
