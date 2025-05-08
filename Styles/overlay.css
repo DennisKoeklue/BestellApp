@@ -3,9 +3,10 @@
     height: 5296px;
     background-color: rgba(0, 0, 0, 0.37);
    position: fixed;
-   top: 0;
+   display: none;
+   flex-direction: column;
    z-index: 1000;
-   
+
    
     
 }
