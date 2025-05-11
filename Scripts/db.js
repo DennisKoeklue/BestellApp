@@ -60,7 +60,7 @@ let myDessert = [
     {
         "name": "Tiramisu",
         "price": 5.99,
-        "description": "Die köstliche Mischung aus Löffelbiskuit mit starkem Espresso, frischer Mascarponecreme und einem Hauch aromatischem Kakao ist einfach zu gut."
+        "description": "Die köstliche Mischung aus Löffelbiskuit mit starkem Espresso, frischer Mascarponecreme und einem Hauch aromatischem Kakao."
     },
     {
         "name": "Panna Cotta",
@@ -68,9 +68,9 @@ let myDessert = [
         "description": "Traditionell Sahne mit Zucker und Gewürzen so lange erhitzt, bis sie stark reduziert ist."
     },
     {
-        "name": "Amarenakirschen aus dem Glas",
+        "name": "Amarena-kirschen aus dem Glas",
         "price": 6.99,
-        "description": "Mit Amarenakirschen bezeichnen wir in Sirup eingelegte italienische Sauerkirschen – weil die Kirschsorte amarena heißt"
+        "description": "Mit Amarenakirschen bezeichnen wir in Sirup eingelegte italienische Sauerkirschen."
     },
     {
         "name": "Zabaione",
