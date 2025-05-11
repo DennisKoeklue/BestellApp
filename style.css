@@ -64,7 +64,7 @@ main{
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 15px;
+    padding: 10px;
 }
 
 .all_maindish_render_div{
