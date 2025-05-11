@@ -66,6 +66,7 @@ function renderBasketItem() {
 function add(i) {
     let test = myDishes[i]
 
+    errorOrderAdd()
     addzusammen(test , i)
     renderBasketItem()
 }
@@ -73,6 +74,7 @@ function add(i) {
 function addDessert(i) {
     let test = myDessert[i]
 
+    errorOrderAdd()
     addzusammen(test , i)
     renderBasketItem()
 }
@@ -80,6 +82,7 @@ function addDessert(i) {
 function addNonAlk(i) {
     let test = myDrinksNonAlk[i]
 
+    errorOrderAdd()
     addzusammen(test , i)
     renderBasketItem()
 }
@@ -87,8 +90,10 @@ function addNonAlk(i) {
 function addAlk(i) {
     let test = myDrinksAlk[i]
 
+    errorOrderAdd()
     addzusammen(test , i)
     renderBasketItem()
+
 }
 
 function addzusammen(test, i) {
@@ -142,17 +147,31 @@ function removeObjektItem(basket_Item) {
 
 function orderButton() {
     if (basketkorb.length === 0) {
-        document.getElementById('error').classList.toggle('d_none')
+        errorOrderRemove()
     }
     else{
         delete basketkorb
         const basketItem2 = document.getElementById('all_basketitem_render_div');
         basketItem2.innerHTML = "";
         basktetUpdateforMinus()
-        document.getElementById('order_confirmation_div').classList.toggle('d_none')
+       orderConfirmation()
 
         
     }
+}
+
+
+function errorOrderRemove() {
+    document.getElementById('error').classList.remove('d_none')
+}
+
+
+function errorOrderAdd() {
+    document.getElementById('error').classList.add('d_none')
+}
+
+function orderConfirmation() {
+    document.getElementById('order_confirmation_div').classList.toggle('d_none')
 }
 
 
