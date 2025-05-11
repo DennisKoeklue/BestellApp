@@ -146,7 +146,9 @@ function orderButton() {
     }
     else{
         delete basketkorb
-        
+        const basketItem2 = document.getElementById('all_basketitem_render_div');
+        basketItem2.innerHTML = "";
+        basktetUpdateforMinus()
         
     }
 }
