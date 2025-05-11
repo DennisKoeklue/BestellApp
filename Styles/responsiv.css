@@ -1,6 +1,11 @@
 /* Tablet Devices*/
 @media (max-width: 1024px ) {
-    
+    .basket_wrapper{
+        display: none;
+    }
+    .store_items{
+        width: 100%;
+    }
 }
 
 
@@ -11,6 +16,6 @@
 
 
 /*mobile devices 360px/375px*/
-@media (max-width: 480px ) {
+@media (max-width: 360px ) {
     
 }
