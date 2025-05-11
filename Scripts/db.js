@@ -125,19 +125,19 @@ let myDrinksNonAlk = [
 
 let myDrinksAlk = [
     {
-    "name": "Limoncello Spritz",
+    "name": "Limoncello Spritz 0.4l",
     "price": 4.59
 },
 {
-    "name": "Manhattan Little Italy",
+    "name": "Manhattan Little Italy 0.3l",
     "price": 7.99
 },
 {
-    "name": "Hot Limoncello",
+    "name": "Hot Limoncello 0.4l",
     "price": 7.99
 },
 {
-    "name": "Negroni Sbagliato",
+    "name": "Negroni Sbagliato 0.3l",
     "price": 8.99
 }
 

@@ -38,7 +38,6 @@ function templateNonAlk(n) {
     <div class="maindish_divs">
                         <div class="maindish_info">
                         <h3>${myDrinksNonAlk[n].name}</h3>
-                        <span>Nach Tradition von der nonna</span>
                         <span class="price_span">${myDrinksNonAlk[n].price}€</span>
                         </div>
                         <div class="maindish_add_div">
@@ -55,7 +54,6 @@ function templateAlkohl(alko) {
     <div class="maindish_divs">
                         <div class="maindish_info">
                         <h3>${myDrinksAlk[alko].name}</h3>
-                        <span>Nach Tradition von der nonna</span>
                         <span class="price_span">${myDrinksAlk[alko].price}€</span>
                         </div>
                         <div class="maindish_add_div">
