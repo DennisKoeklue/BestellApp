@@ -23,6 +23,7 @@ main{
     min-height: 100vh;
     background-color: rgb(253, 253, 253);
     display: flex;
+    justify-content: center;
 
 }
 
@@ -32,6 +33,7 @@ main{
     padding: 0px;
     display: flex;
     flex-direction: column;
+    max-width: 1980px;
     
 }
 
@@ -132,6 +134,7 @@ main{
     flex-grow: 1;
     /* padding: 16px; */
     box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.527);
+    max-width: 250px;
 }
 
 .basket{
