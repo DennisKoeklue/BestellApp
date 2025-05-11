@@ -142,13 +142,15 @@ function removeObjektItem(basket_Item) {
 
 function orderButton() {
     if (basketkorb.length === 0) {
-        
+        document.getElementById('error').classList.toggle('d_none')
     }
     else{
         delete basketkorb
         const basketItem2 = document.getElementById('all_basketitem_render_div');
         basketItem2.innerHTML = "";
         basktetUpdateforMinus()
+        document.getElementById('order_confirmation_div').classList.toggle('d_none')
+
         
     }
 }

@@ -88,7 +88,8 @@
                 </div>
                 <div class="seperator"></div>
                 <div id="all_basketitem_render_div" class="all_dishes_render_div">
-                    
+
+                <span id="error" class="error d_none">Legen sie erst Gerichte in den Warenkorb bevor sie Bestellen können</span>
                    
                 </div>
                 <div class="seperator"></div>
@@ -107,6 +108,9 @@
 
                 <div class="for_button">
                     <button onclick="orderButton()">Bestellen</button>
+                </div>
+                <div id ="order_confirmation_div" class="order_confirmation_div d_none">
+                <span class="order_confirmation">Bestellung wurde Erfolgreich aufgenommen</span>
                 </div>
             </div>
         </section>
