@@ -84,7 +84,7 @@ width: 50px;
 .overlay_render_div{
     width: 100%;
     min-height: 250px;
-    /*flex: 1;*/
+    flex: 1;
 }
 
 .overlay_price_list{
