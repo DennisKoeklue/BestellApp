@@ -55,6 +55,7 @@ function renderBasketItem() {
     let basketItemOverlay = document.getElementById('overlayRenderDiv');
     const basketItem = document.getElementById('all_basketitem_render_div');
     basketItem.innerHTML = "";
+    basketItemOverlay.innerHTML = "";
     let totalSum = 0;
     let basket_Item = 0;
     for (basket_Item; basket_Item < basketkorb.length; basket_Item++) {
@@ -176,6 +177,21 @@ function errorOrderAdd() {
 
 function orderConfirmation() {
     document.getElementById('order_confirmation_div').classList.toggle('d_none')
+}
+
+function swapOverlay3() {
+let Overlay = document.getElementById('idOverlay')
+    Overlay.classList.remove("overlay");
+    Overlay.classList.add("overlaySwap");
+
+}
+
+function SwapOverlayX() {
+    let Overlay = document.getElementById('idOverlay')
+    Overlay.classList.remove("overlaySwap")
+    Overlay.classList.add("overlay")
+
+
 }
 
 

@@ -12,9 +12,17 @@
    flex-direction: column;
   /* z-index ist für die reihenfolge */
    z-index: 1000;
+}
 
-   
-    
+.overlaySwap{
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+    display: flex;
+   position: fixed;
+   flex-direction: column;
+  /* z-index ist für die reihenfolge */
+   z-index: 1000;
 }
 
 .basket_header {
