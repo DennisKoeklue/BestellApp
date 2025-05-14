@@ -51,14 +51,18 @@ function renderAlkohol() {
 
 function renderBasketItem() {
     let basketallPrice = document.getElementById('allPrices')
+    let baskteOverlayPrice = document.getElementById('allPricesOverlay')
+    let basketItemOverlay = document.getElementById('overlayRenderDiv');
     const basketItem = document.getElementById('all_basketitem_render_div');
     basketItem.innerHTML = "";
     let totalSum = 0;
     let basket_Item = 0;
     for (basket_Item; basket_Item < basketkorb.length; basket_Item++) {
         basketItem.innerHTML += templateBasketdishes(basket_Item);
+        basketItemOverlay.innerHTML += templateBasketdishes(basket_Item);
         totalSum += basketkorb[basket_Item].amount * basketkorb[basket_Item].price
         basketallPrice.innerHTML = basketBill(totalSum);
+        baskteOverlayPrice.innerHTML = basketBill(totalSum);
     }
     
 }
