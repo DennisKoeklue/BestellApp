@@ -120,6 +120,7 @@ function addzusammen(test, i) {
 
 function basktetUpdateforMinus(){
     let basketallPrice = document.getElementById('allPrices')
+    let basketallOverlay = document.getElementById('allPriceOverlay')
     basketallPrice.innerHTML = basketBill0()
 }
 
