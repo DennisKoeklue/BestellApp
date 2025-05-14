@@ -164,6 +164,21 @@ button:hover{
 
 }
 
+
+.button_overlay{
+  background-color: orange;
+  border:solid rgb(204, 134, 3);
+  border-radius: 10px;
+  padding: 10px 80px 10px 80px;
+  font-size: 20px;
+}
+.button_overlay:hover{
+  background-color: rgb(204, 134, 3);
+  border:solid orange;
+  cursor: pointer;
+
+}
+
 .error{
   color: red;
 }
@@ -175,3 +190,7 @@ button:hover{
   
 }
 
+.dree_menu_overlay img{
+  width: 100%;
+  min-width: 50px;
+}

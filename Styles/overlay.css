@@ -7,7 +7,7 @@
     width: 100%;
     height: 100vh;
     background-color: transparent;
-    display: flex;
+    display: none;
    position: fixed;
    flex-direction: column;
   /* z-index ist für die reihenfolge */
@@ -83,7 +83,6 @@ width: 50px;
 
 .overlay_render_div{
     width: 100%;
-    min-height: 250px;
     flex: 1;
 }
 
@@ -104,4 +103,12 @@ width: 50px;
     flex-direction: column;
     text-align: end;
     font-size: 25px;
+}
+
+.for_button_overlay{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 70px;
 }
