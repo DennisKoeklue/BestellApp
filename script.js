@@ -211,4 +211,11 @@ function SwapOverlayX() {
 
 }
 
+window.onresize = function() {
+    if(window.innerWidth > 1024) {
+        SwapOverlayX()
+    }
+}
+
+
 
