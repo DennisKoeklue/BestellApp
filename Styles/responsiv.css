@@ -1,17 +1,28 @@
 /* Tablet Devices*/
 @media (max-width: 1024px ) {
+    
+    .dree_menu_overlay{
+        display: flex;
+    }
+
     .basket_wrapper{
         display: none;
     }
     .store_items{
         width: 100%;
     }
+
+    .restaurant_textbox{
+        margin-top: 25px;
+    }
 }
 
 
 /*Mobiel devices -max*/
-@media (max-width: 480px ) {
-    
+@media (max-width: 500px ) {
+    .food_order_warper a{
+        font-size: 13px;
+    }
 }
 
 

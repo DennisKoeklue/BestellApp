@@ -8,3 +8,7 @@
 html{
     scroll-behavior: smooth;
 }
+
+.break_word{
+    word-break: break-all;
+}

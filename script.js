@@ -71,6 +71,7 @@ function renderBasketItem() {
 function add(i) {
     let test = myDishes[i]
 
+    orderConfirmationNone()
     errorOrderAdd()
     addzusammen(test , i)
     renderBasketItem()
@@ -79,6 +80,7 @@ function add(i) {
 function addDessert(i) {
     let test = myDessert[i]
 
+    orderConfirmationNone()
     errorOrderAdd()
     addzusammen(test , i)
     renderBasketItem()
@@ -87,6 +89,7 @@ function addDessert(i) {
 function addNonAlk(i) {
     let test = myDrinksNonAlk[i]
 
+    orderConfirmationNone()
     errorOrderAdd()
     addzusammen(test , i)
     renderBasketItem()
@@ -95,6 +98,7 @@ function addNonAlk(i) {
 function addAlk(i) {
     let test = myDrinksAlk[i]
 
+    orderConfirmationNone()
     errorOrderAdd()
     addzusammen(test , i)
     renderBasketItem()
@@ -120,8 +124,9 @@ function addzusammen(test, i) {
 
 function basktetUpdateforMinus(){
     let basketallPrice = document.getElementById('allPrices')
-    let basketallOverlay = document.getElementById('allPriceOverlay')
+    let basketallOverlay = document.getElementById('allPricesOverlay')
     basketallPrice.innerHTML = basketBill0()
+    basketallOverlay.innerHTML = basketBill0()
 }
 
 
@@ -154,11 +159,14 @@ function removeObjektItem(basket_Item) {
 function orderButton() {
     if (basketkorb.length === 0) {
         errorOrderRemove()
+        orderConfirmationNone()
     }
     else{
-        delete basketkorb
+        basketkorb = [];
         const basketItem2 = document.getElementById('all_basketitem_render_div');
+        const baksetItem3 = document.getElementById('overlayRenderDiv')
         basketItem2.innerHTML = "";
+        baksetItem3.innerHTML = "";
         basktetUpdateforMinus()
        orderConfirmation()
 
@@ -169,15 +177,23 @@ function orderButton() {
 
 function errorOrderRemove() {
     document.getElementById('error').classList.remove('d_none')
+    document.getElementById('error_overlay').classList.remove('d_none')
 }
 
 
 function errorOrderAdd() {
     document.getElementById('error').classList.add('d_none')
+    document.getElementById('error_overlay').classList.add('d_none')
 }
 
 function orderConfirmation() {
     document.getElementById('order_confirmation_div').classList.toggle('d_none')
+    document.getElementById('order_confirmation_overlay').classList.toggle('d_none')
+}
+
+function orderConfirmationNone() {
+    document.getElementById('order_confirmation_div').classList.add('d_none')
+    document.getElementById('order_confirmation_overlay').classList.add('d_none')
 }
 
 function swapOverlay3() {

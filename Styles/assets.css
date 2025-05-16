@@ -190,7 +190,15 @@ button:hover{
   
 }
 
+.order_confirmation{
+  color: green;
+}
+
 .dree_menu_overlay img{
   width: 100%;
   min-width: 50px;
+}
+
+.dree_menu_overlay{
+  display: none;
 }
