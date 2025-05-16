@@ -93,6 +93,10 @@ width: 50px;
     width: 100%;
     flex: 1;
     padding: 15px;
+    overflow: auto;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+    scrollbar-color: #f9b702 rgba(0, 0, 0, 0.1);
 }
 
 .overlay_render_div img{

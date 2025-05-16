@@ -1,4 +1,7 @@
 function init() {
+    LoadStorage()
+
+    
     renderMainDishes()
     renderDesserts()
     renderNonAlk()
@@ -113,10 +116,12 @@ function addzusammen(test, i) {
             "amount":1,
             "price":test.price
         })
+        saveStorage()
     }
     else
     {
         findeArtikel.amount ++;
+        saveStorage()
     } 
 
 }
@@ -217,5 +222,14 @@ window.onresize = function() {
     }
 }
 
+
+
+function saveStorage() {
+    localStorage.setItem('BaskteItems' , JSON.stringify(basketkorb));
+}
+
+function LoadStorage() {
+books = JSON.parse(localStorage.getItem('BaskteItems')) || basketkorb 
+}
 
 
