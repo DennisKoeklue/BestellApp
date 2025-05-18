@@ -201,4 +201,23 @@ button:hover{
 
 .dree_menu_overlay{
   display: none;
+  width: 150px;
+  height: 55px;
+  justify-content: center;
+  align-items: center;
+  background-color: #319fd1;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: bolder;
+  cursor: pointer;
+  position: fixed;
+  bottom: 10px;
+  left :auto;
+  right: unset;
+}
+
+.dree_menu_overlay:hover{
+background-color: orange;
+border: 2px solid black;
+color: white;
 }
