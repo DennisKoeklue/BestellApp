@@ -192,6 +192,7 @@ function orderButton() {
         basketItem2.innerHTML = "";
         baksetItem3.innerHTML = "";
         basktetUpdateforMinus()
+        saveStorage()
        orderConfirmation()
 
         
