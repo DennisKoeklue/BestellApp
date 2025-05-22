@@ -1,11 +1,11 @@
 function init() {
     LoadStorage()
-
-    
+    renderBasketItem()
     renderMainDishes()
     renderDesserts()
     renderNonAlk()
     renderAlkohol()
+    
 }
 
 
@@ -74,6 +74,7 @@ function renderBasketItem() {
 function add(i) {
     let test = myDishes[i]
 
+    saveStorage()
     orderConfirmationNone()
     errorOrderAdd()
     addzusammen(test , i)
@@ -83,6 +84,7 @@ function add(i) {
 function addDessert(i) {
     let test = myDessert[i]
 
+    saveStorage()
     orderConfirmationNone()
     errorOrderAdd()
     addzusammen(test , i)
@@ -92,6 +94,7 @@ function addDessert(i) {
 function addNonAlk(i) {
     let test = myDrinksNonAlk[i]
 
+    saveStorage()
     orderConfirmationNone()
     errorOrderAdd()
     addzusammen(test , i)
@@ -101,6 +104,7 @@ function addNonAlk(i) {
 function addAlk(i) {
     let test = myDrinksAlk[i]
 
+    saveStorage()
     orderConfirmationNone()
     errorOrderAdd()
     addzusammen(test , i)
@@ -137,6 +141,7 @@ function basktetUpdateforMinus(){
 
 function addedAmount(i) {
     basketkorb[i].amount ++
+    saveStorage()
     renderBasketItem()
 
 }
@@ -144,18 +149,22 @@ function addedAmount(i) {
 function minusAmount(basket_Item) {
     if (basketkorb[basket_Item].amount === 1) {
         removeObjektItem(basket_Item)
+        saveStorage()
         renderBasketItem()
+
         
 
     }
     else{
         basketkorb[basket_Item].amount --
+        saveStorage()
         renderBasketItem()
     }
 }
 
 function removeObjektItem(basket_Item) {
     basketkorb.splice(basket_Item, 1)
+    saveStorage()
     basktetUpdateforMinus()
     renderBasketItem()
 }
@@ -225,11 +234,12 @@ window.onresize = function() {
 
 
 function saveStorage() {
-    localStorage.setItem('BaskteItems' , JSON.stringify(basketkorb));
+    localStorage.setItem('basketkorb' , JSON.stringify(basketkorb));
 }
 
 function LoadStorage() {
-books = JSON.parse(localStorage.getItem('BaskteItems')) || basketkorb 
+    
+basketkorb = JSON.parse(localStorage.getItem('basketkorb'))
 }
 
 
