@@ -16,6 +16,10 @@
     .restaurant_textbox{
         margin-top: 25px;
     }
+    .main-content{
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
 }
 
 
