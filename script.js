@@ -1,10 +1,20 @@
 function init() {
     LoadStorage()
+    if (basketkorb != null) {
     renderBasketItem()
     renderMainDishes()
     renderDesserts()
     renderNonAlk()
     renderAlkohol()
+    }
+    else{
+    
+    renderMainDishes()
+    renderDesserts()
+    renderNonAlk()
+    renderAlkohol()
+    }
+    
     
 }
 
@@ -239,7 +249,7 @@ function saveStorage() {
 
 function LoadStorage() {
     
-basketkorb = JSON.parse(localStorage.getItem('basketkorb'))
+basketkorb = JSON.parse(localStorage.getItem('basketkorb')) || basketkorb
 }
 
 
