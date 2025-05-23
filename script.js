@@ -6,21 +6,12 @@ function init() {
     renderAll('Desserts', myDessert, templateDessert)
     renderAll('NonAlk', myDrinksNonAlk, templateNonAlk)
     renderAll('Alk', myDrinksAlk, templateAlkohl)
-    // renderMainDishes()
-    // renderDesserts()
-    // renderNonAlk()
-    // renderAlkohol()
     }
     else{
     renderAll('MainDishes', myDishes, templateMainDishes)
     renderAll('Desserts', myDessert, templateDessert)
     renderAll('NonAlk', myDrinksNonAlk, templateNonAlk)
     renderAll('Alk', myDrinksAlk, templateAlkohl)
-
-    // renderMainDishes()
-    // renderDesserts()
-    // renderNonAlk()
-    // renderAlkohol()
     }
     
     
@@ -37,48 +28,6 @@ function renderAll(id, dishes, template ) {
     }
 }
 
-
-function renderMainDishes() {
-    const mainDishesRef = document.getElementById(`MainDishes`);
-    mainDishesRef.innerHTML = "";
-
-
-    for (let i = 0; i < myDishes.length; i++) {
-        mainDishesRef.innerHTML += templateMainDishes(i)
-        
-    }
-}
-
-function renderDesserts() {
-    const mainDessertsRef = document.getElementById(`Desserts`);
-    mainDessertsRef.innerHTML = "";
-
-    for (let d = 0; d < myDessert.length; d++) {
-        mainDessertsRef.innerHTML += templateDessert(d)
-        
-    }
-}
-
-function renderNonAlk() {
-    const mainNonAlk = document.getElementById(`NonAlk`);
-    mainNonAlk.innerHTML = "";
-
-    for (let n = 0; n < myDrinksNonAlk.length; n++) {
-        mainNonAlk.innerHTML += templateNonAlk(n)
-        
-    }
-}
-
-
-function renderAlkohol() {
-    const mainAlkohol = document.getElementById(`Alk`);
-    mainAlkohol.innerHTML = "";
-
-    for (let alko = 0; alko < myDrinksAlk.length; alko++) {
-        mainAlkohol.innerHTML += templateAlkohl(alko)
-        
-    }
-}
 
 
 function renderBasketItem() {
@@ -111,47 +60,6 @@ function addAll(db, i) {
     renderBasketItem()
 }
 
-
-function add(i) {
-    let test = myDishes[i]
-
-    saveStorage()
-    orderConfirmationNone()
-    errorOrderAdd()
-    addzusammen(test , i)
-    renderBasketItem()
-}
-
-function addDessert(i) {
-    let test = myDessert[i]
-
-    saveStorage()
-    orderConfirmationNone()
-    errorOrderAdd()
-    addzusammen(test , i)
-    renderBasketItem()
-}
-
-function addNonAlk(i) {
-    let test = myDrinksNonAlk[i]
-
-    saveStorage()
-    orderConfirmationNone()
-    errorOrderAdd()
-    addzusammen(test , i)
-    renderBasketItem()
-}
-
-function addAlk(i) {
-    let test = myDrinksAlk[i]
-
-    saveStorage()
-    orderConfirmationNone()
-    errorOrderAdd()
-    addzusammen(test , i)
-    renderBasketItem()
-
-}
 
 function addzusammen(test, i) {
     const findeArtikel = basketkorb.find(artikel => artikel.name === test.name)
@@ -187,14 +95,12 @@ function addedAmount(i) {
 
 }
 
+
 function minusAmount(basket_Item) {
     if (basketkorb[basket_Item].amount === 1) {
         removeObjektItem(basket_Item)
         saveStorage()
         renderBasketItem()
-
-        
-
     }
     else{
         basketkorb[basket_Item].amount --
