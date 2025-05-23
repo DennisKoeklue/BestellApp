@@ -225,3 +225,17 @@ color: white;
 .footer_img{
   width: 118px;
 }
+
+.items{
+  background-color: white;
+  width: 23px;
+  height: 23px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -8px;
+  right: -7px;
+  border: solid 1px black;
+}
