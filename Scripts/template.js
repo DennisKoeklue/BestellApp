@@ -1,13 +1,13 @@
-function templateMainDishes(i) {
+function templateMainDishes(rendAll) {
     return`
     <div class="maindish_divs">
                         <div class="maindish_info">
-                        <h3>${myDishes[i].name}</h3>
-                        <span>${myDishes[i].description}</span>
-                        <span class="price_span">${myDishes[i].price}€</span>
+                        <h3>${myDishes[rendAll].name}</h3>
+                        <span>${myDishes[rendAll].description}</span>
+                        <span class="price_span">${myDishes[rendAll].price}€</span>
                         </div>
                         <div class="maindish_add_div">
-                            <div onclick ="add(${i})" class="maindish_add_img">
+                            <div onclick ="addAll(myDishes, ${rendAll})" class="maindish_add_img">
                                 <span class="add_symbole">+</span>
                             </div>
                         </div>
@@ -16,16 +16,16 @@ function templateMainDishes(i) {
 }
 
 
-function templateDessert(d) {
+function templateDessert(rendAll) {
     return`
     <div class="maindish_divs">
                         <div class="maindish_info">
-                        <h3>${myDessert[d].name}</h3>
-                        <span>${myDessert[d].description}</span>
-                        <span class="price_span">${myDessert[d].price}€</span>
+                        <h3>${myDessert[rendAll].name}</h3>
+                        <span>${myDessert[rendAll].description}</span>
+                        <span class="price_span">${myDessert[rendAll].price}€</span>
                         </div>
                         <div class="maindish_add_div">
-                            <div onclick ="addDessert(${d})" class="maindish_add_img">
+                            <div onclick ="addAll(myDessert, ${rendAll})" class="maindish_add_img">
                                 <span class="add_symbole">+</span>
                             </div>
                         </div>
@@ -33,15 +33,15 @@ function templateDessert(d) {
     `
 }
 
-function templateNonAlk(n) {
+function templateNonAlk(rendAll) {
     return`
     <div class="maindish_divs">
                         <div class="maindish_info">
-                        <h3>${myDrinksNonAlk[n].name}</h3>
-                        <span class="price_span">${myDrinksNonAlk[n].price}€</span>
+                        <h3>${myDrinksNonAlk[rendAll].name}</h3>
+                        <span class="price_span">${myDrinksNonAlk[rendAll].price}€</span>
                         </div>
                         <div class="maindish_add_div">
-                            <div onclick ="addNonAlk(${n})" class="maindish_add_img">
+                            <div onclick ="addAll(myDrinksNonAlk, ${rendAll})" class="maindish_add_img">
                                 <span class="add_symbole">+</span>
                             </div>
                         </div>
@@ -49,15 +49,15 @@ function templateNonAlk(n) {
     `
 }
 
-function templateAlkohl(alko) {
+function templateAlkohl(rendAll) {
     return`
     <div class="maindish_divs">
                         <div class="maindish_info">
-                        <h3>${myDrinksAlk[alko].name}</h3>
-                        <span class="price_span">${myDrinksAlk[alko].price}€</span>
+                        <h3>${myDrinksAlk[rendAll].name}</h3>
+                        <span class="price_span">${myDrinksAlk[rendAll].price}€</span>
                         </div>
                         <div class="maindish_add_div">
-                            <div onclick="addAlk(${alko})" class="maindish_add_img">
+                            <div onclick="addAll(myDrinksAlk, ${rendAll})" class="maindish_add_img">
                                 <span class="add_symbole">+</span>
                             </div>
                         </div>

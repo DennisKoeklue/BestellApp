@@ -2,20 +2,39 @@ function init() {
     LoadStorage()
     if (basketkorb != null) {
     renderBasketItem()
-    renderMainDishes()
-    renderDesserts()
-    renderNonAlk()
-    renderAlkohol()
+    renderAll('MainDishes', myDishes, templateMainDishes)
+    renderAll('Desserts', myDessert, templateDessert)
+    renderAll('NonAlk', myDrinksNonAlk, templateNonAlk)
+    renderAll('Alk', myDrinksAlk, templateAlkohl)
+    // renderMainDishes()
+    // renderDesserts()
+    // renderNonAlk()
+    // renderAlkohol()
     }
     else{
-    
-    renderMainDishes()
-    renderDesserts()
-    renderNonAlk()
-    renderAlkohol()
+    renderAll('MainDishes', myDishes, templateMainDishes)
+    renderAll('Desserts', myDessert, templateDessert)
+    renderAll('NonAlk', myDrinksNonAlk, templateNonAlk)
+    renderAll('Alk', myDrinksAlk, templateAlkohl)
+
+    // renderMainDishes()
+    // renderDesserts()
+    // renderNonAlk()
+    // renderAlkohol()
     }
     
     
+}
+
+function renderAll(id, dishes, template ) {
+    let mainDishesRef = document.getElementById(id);
+    mainDishesRef.innerHTML = "";
+
+    for (let rendAll = 0; rendAll < dishes.length; rendAll++) {
+        mainDishesRef.innerHTML += template (rendAll)
+
+        
+    }
 }
 
 
@@ -80,6 +99,18 @@ function renderBasketItem() {
     }
     
 }
+
+
+function addAll(db, i) {
+    let test = db[i]
+
+    saveStorage()
+    orderConfirmationNone()
+    errorOrderAdd()
+    addzusammen(test , i)
+    renderBasketItem()
+}
+
 
 function add(i) {
     let test = myDishes[i]
