@@ -6,6 +6,7 @@ function init() {
     renderAll('Desserts', myDessert, templateDessert)
     renderAll('NonAlk', myDrinksNonAlk, templateNonAlk)
     renderAll('Alk', myDrinksAlk, templateAlkohl)
+    basketValueButton()
     }
     else{
     renderAll('MainDishes', myDishes, templateMainDishes)
@@ -50,6 +51,14 @@ function renderBasketItem() {
 }
 
 
+function basketValueButton() {
+    let Button = document.getElementById('items');
+    let counterValue = basketkorb.length
+    Button.innerHTML = "";
+    Button.innerHTML = basketButtonValue(counterValue);
+}
+
+
 function addAll(db, i) {
     let test = db[i]
 
@@ -58,6 +67,7 @@ function addAll(db, i) {
     errorOrderAdd()
     addzusammen(test , i)
     renderBasketItem()
+    basketValueButton()
 }
 
 
@@ -101,6 +111,7 @@ function minusAmount(basket_Item) {
         removeObjektItem(basket_Item)
         saveStorage()
         renderBasketItem()
+        basketValueButton()
     }
     else{
         basketkorb[basket_Item].amount --
@@ -114,6 +125,7 @@ function removeObjektItem(basket_Item) {
     saveStorage()
     basktetUpdateforMinus()
     renderBasketItem()
+    basketValueButton()
 }
 
 

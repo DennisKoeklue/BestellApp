@@ -113,3 +113,10 @@ function basketBill0() {
     <h4>0.00€</h4>
     `
 }
+
+function basketButtonValue(counterValue) {
+    return`
+    <span>${counterValue}</span>
+    
+    `
+}
