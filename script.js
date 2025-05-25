@@ -33,19 +33,14 @@ function renderAll(id, dishes, template ) {
 
 function renderBasketItem() {
     let basketallPrice = document.getElementById('allPrices')
-    let baskteOverlayPrice = document.getElementById('allPricesOverlay')
-    let basketItemOverlay = document.getElementById('overlayRenderDiv');
     const basketItem = document.getElementById('all_basketitem_render_div');
     basketItem.innerHTML = "";
-    basketItemOverlay.innerHTML = "";
     let totalSum = 0;
     let basket_Item = 0;
     for (basket_Item; basket_Item < basketkorb.length; basket_Item++) {
         basketItem.innerHTML += templateBasketdishes(basket_Item);
-        basketItemOverlay.innerHTML += templateBasketdishes(basket_Item);
         totalSum += basketkorb[basket_Item].amount * basketkorb[basket_Item].price
         basketallPrice.innerHTML = basketBill(totalSum);
-        baskteOverlayPrice.innerHTML = basketBill(totalSum);
     }
     
 }
@@ -92,9 +87,7 @@ function addzusammen(test, i) {
 
 function basktetUpdateforMinus(){
     let basketallPrice = document.getElementById('allPrices')
-    let basketallOverlay = document.getElementById('allPricesOverlay')
     basketallPrice.innerHTML = basketBill0()
-    basketallOverlay.innerHTML = basketBill0()
 }
 
 
@@ -137,9 +130,7 @@ function orderButton() {
     else{
         basketkorb = [];
         const basketItem2 = document.getElementById('all_basketitem_render_div');
-        const baksetItem3 = document.getElementById('overlayRenderDiv')
         basketItem2.innerHTML = "";
-        baksetItem3.innerHTML = "";
         basktetUpdateforMinus()
         saveStorage()
        orderConfirmation()
@@ -171,24 +162,15 @@ function orderConfirmationNone() {
 }
 
 function swapOverlay3() {
-let Overlay = document.getElementById('idOverlay')
-    Overlay.classList.remove("overlay");
-    Overlay.classList.add("overlaySwap");
-
+let Overlay = document.getElementById('basket_wrapper')
+    Overlay.classList.remove("basket_wrapper");
+    Overlay.classList.add("basket_show");
 }
 
 function SwapOverlayX() {
-    let Overlay = document.getElementById('idOverlay')
-    Overlay.classList.remove("overlaySwap")
-    Overlay.classList.add("overlay")
-
-
-}
-
-window.onresize = function() {
-    if(window.innerWidth > 1024) {
-        SwapOverlayX()
-    }
+    let Overlay = document.getElementById('basket_wrapper')
+    Overlay.classList.remove("basket_show")
+    Overlay.classList.add("basket_wrapper")
 }
 
 

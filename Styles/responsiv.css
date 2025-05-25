@@ -7,8 +7,60 @@
     }
 
     .basket_wrapper{
+        position: fixed;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.181);
+        width: 100%;
+        max-width: 1900px;
+        height: 100vh;
         display: none;
+        align-items: center;
+        flex-direction: column;
     }
+
+    .basket_show{
+        position: fixed;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.181);
+        width: 100%;
+        max-width: 1900px;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .basket{
+    max-width: 500px;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+
+    }
+
+    .basket_header{
+        display: flex;
+    }
+
+    .basket_h2 h2{
+        font-size: 25px;
+    }
+
+    .price_names span{
+        font-size: 17px;
+    }
+
+    .total_price span{
+        font-size: 17px;
+    }
+
+    .all_dishes_render_div{
+        flex: 1;
+        max-height: 500px;
+    }
+    
+    
     .store_items{
         width: 100%;
     }
