@@ -66,9 +66,7 @@ function templateAlkohl(rendAll) {
 }
 
 
-function templateBasketdishes(basket_Item) {
-    let dishestofixprice = basketkorb[basket_Item].price * basketkorb[basket_Item].amount
-    let afterdishesfixprice = dishestofixprice.toFixed(2)
+function templateBasketdishes(basket_Item, afterdishesfixprice) {
     return`
      <div class="test">
                         <div class="bestellte_ware">
@@ -95,10 +93,7 @@ function templateBasketdishes(basket_Item) {
     `
 }
 
-function basketBill(totalSum) {
-    let subsum = totalSum.toFixed(2);
-    let bevorToFix = totalSum + 5.00
-    let afterToFix= bevorToFix.toFixed(2)
+function basketBill(subsum, afterToFix) {
     return`
     <span>${subsum}€</span>
     <span>5.00€</span>

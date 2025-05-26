@@ -37,10 +37,23 @@ function renderBasketItem() {
     basketItem.innerHTML = "";
     let totalSum = 0;
     let basket_Item = 0;
+    let subsum = 0;
+    let bevorToFix = 0
+    let afterToFix= 0
+    let dishestofixprice = 0;
+    let afterdishesfixprice= 0;
+
     for (basket_Item; basket_Item < basketkorb.length; basket_Item++) {
-        basketItem.innerHTML += templateBasketdishes(basket_Item);
+        dishestofixprice = basketkorb[basket_Item].price * basketkorb[basket_Item].amount
+        afterdishesfixprice = dishestofixprice.toFixed(2)
+        basketItem.innerHTML += templateBasketdishes(basket_Item, afterdishesfixprice);
+
         totalSum += basketkorb[basket_Item].amount * basketkorb[basket_Item].price
-        basketallPrice.innerHTML = basketBill(totalSum);
+        subsum = totalSum.toFixed(2);
+        bevorToFix = totalSum + 5.00;
+        afterToFix= bevorToFix.toFixed(2);
+
+        basketallPrice.innerHTML = basketBill(subsum, afterToFix);
     }
     
 }
@@ -142,23 +155,19 @@ function orderButton() {
 
 function errorOrderRemove() {
     document.getElementById('error').classList.remove('d_none')
-    document.getElementById('error_overlay').classList.remove('d_none')
 }
 
 
 function errorOrderAdd() {
     document.getElementById('error').classList.add('d_none')
-    document.getElementById('error_overlay').classList.add('d_none')
 }
 
 function orderConfirmation() {
     document.getElementById('order_confirmation_div').classList.toggle('d_none')
-    document.getElementById('order_confirmation_overlay').classList.toggle('d_none')
 }
 
 function orderConfirmationNone() {
     document.getElementById('order_confirmation_div').classList.add('d_none')
-    document.getElementById('order_confirmation_overlay').classList.add('d_none')
 }
 
 function swapOverlay3() {

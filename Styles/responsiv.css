@@ -39,6 +39,10 @@
 
     }
 
+    .for_button{
+        margin-bottom: 30px;
+    }
+
     .basket_header{
         display: flex;
     }
@@ -57,7 +61,6 @@
 
     .all_dishes_render_div{
         flex: 1;
-        max-height: 500px;
     }
     
     
