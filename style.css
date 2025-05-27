@@ -88,10 +88,15 @@ main{
 }
 
 .maindish_info{
+    min-width: 200px;
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+.maindish_info span{
+    word-break: keep-all;
 }
 
 .maindish_add_div{

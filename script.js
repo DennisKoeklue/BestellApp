@@ -37,23 +37,9 @@ function renderBasketItem() {
     basketItem.innerHTML = "";
     let totalSum = 0;
     let basket_Item = 0;
-    let subsum = 0;
-    let bevorToFix = 0
-    let afterToFix= 0
-    let dishestofixprice = 0;
-    let afterdishesfixprice= 0;
 
     for (basket_Item; basket_Item < basketkorb.length; basket_Item++) {
-        dishestofixprice = basketkorb[basket_Item].price * basketkorb[basket_Item].amount
-        afterdishesfixprice = dishestofixprice.toFixed(2)
-        basketItem.innerHTML += templateBasketdishes(basket_Item, afterdishesfixprice);
-
-        totalSum += basketkorb[basket_Item].amount * basketkorb[basket_Item].price
-        subsum = totalSum.toFixed(2);
-        bevorToFix = totalSum + 5.00;
-        afterToFix= bevorToFix.toFixed(2);
-
-        basketallPrice.innerHTML = basketBill(subsum, afterToFix);
+         totalSum = forTheBasketRender(basket_Item,basketItem,basketallPrice, totalSum);
     }
     
 }
@@ -157,6 +143,7 @@ function orderButton() {
         basktetUpdateforMinus()
         saveStorage()
        orderConfirmation()
+       basketValueButton()
 
         
     }

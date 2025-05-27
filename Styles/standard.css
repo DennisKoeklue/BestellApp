@@ -10,5 +10,5 @@ html{
 }
 
 .break_word{
-    word-break: break-all;
+    word-break: keep-all;
 }

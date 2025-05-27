@@ -40,7 +40,7 @@
     }
 
     .for_button{
-        margin-bottom: 30px;
+        margin-bottom: 85px;
     }
 
     .basket_header{
@@ -81,12 +81,19 @@
 /*Mobiel devices -max*/
 @media (max-width: 500px ) {
     .food_order_warper a{
-        font-size: 13px;
+        font-size: 16px;
     }
+    
+
 }
 
 
-/*mobile devices 360px/375px*/
-@media (max-width: 360px ) {
-    
+@media (max-width: 400px ) {
+    .footer_credits{
+        display: none;
+    }
+
+    .main-content{
+        justify-content: center;
+    }
 }
