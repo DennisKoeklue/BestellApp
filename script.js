@@ -59,6 +59,16 @@ function renderBasketItem() {
 }
 
 
+function forTheBasketRender(basket_Item,basketItem,basketallPrice, totalSum) {
+    dishestofixprice = basketkorb[basket_Item].price * basketkorb[basket_Item].amount
+    basketItem.innerHTML += templateBasketdishes(basket_Item, dishestofixprice.toFixed(2));
+    totalSum += basketkorb[basket_Item].amount * basketkorb[basket_Item].price
+    basketallPrice.innerHTML = basketBill(totalSum.toFixed(2), (totalSum + 5.00).toFixed(2));
+
+    return totalSum
+    }
+
+
 function basketValueButton() {
     let Button = document.getElementById('items');
     let counterValue = basketkorb.length
